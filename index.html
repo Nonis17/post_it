@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="index.js" defer></script>
+    <title>To do post it</title>
+    <meta name="description" content="A simple and easy to use to do app!" />
+</head>
+
+<body>
+    <div class="toDo">
+        <form id="addTodo">
+            <h1 class="title">TO DO POST IT!</h1>
+
+            <label for="text" class="titlePostIt"></label>
+            <input type="text" name="titlePostIt" class="titlePostIt" maxlength="30" id="titlePostIt" size="100">
+            <span id="errorMessage"></span>
+
+            <label for="descriptionToDo"></label>
+            <textarea name="bio" class="descriptionToDo" id="descriptionToDo" name="description" maxlength="150"
+                cols="20" rows="10" placeholder="Write something..." required></textarea>
+
+            <button>Send</button>
+        </form>
+
+        <div class="container">
+            <ul class="to-do-list"></ul>
+        </div>
+</body>
+
+</html>
